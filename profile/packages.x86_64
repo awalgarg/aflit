@@ -35,6 +35,8 @@ xf86-video-nouveau
 xf86-input-synaptics
 
 alsa-utils
+pulseaudio
+pulseaudio-alsa
 
 i3-wm
 i3status
