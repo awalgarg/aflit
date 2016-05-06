@@ -1,18 +1,56 @@
-# ArchISO Maker
+# aflit
 
-This is a helper template like thingy for easily using archiso and to version-control your configs with `git`. I recommend that you first read the wiki tutorial at https://wiki.archlinux.org/index.php/Archiso and then come to this.
+*aflit* is an Arch distro for leet™ people. It comes with some packages popular among the Arch community and terminal fanboys, some of which include:
 
-### Usage
+- i3 window manager (tiling WMs ftw!)
+- ranger (file manager)
+- rofi (window switcher and application picker)
+- feh (viewing images)
+- scrot (screenshot taker)
+- ttf-inconsolata (monsospaced font)
 
-- escalate to root
-- clone repo and ensure that everything inside it is owned by root only
-- create a folder `profile` and copy the archiso template configs inside it
-	- no lock files must be present here
-- make changes to the profile, and commit them when you like
-- run `make start` to build the iso. it will be built in `workingdir/out`
-- if the build fails but is resumable after fixes to the profile, you can make your fixes and run `make continue` to resume
-- if the build fails and is not resumable, simply make your changes and run `make start` again
-- to cleanup things manually for whatever reason, run `make clean`
+It also features the regular packages one expects in a regular install like xorg, common video drivers, a browser (firefox), alsa, document reader (zathura) and other things all pre-setup to give a balance of the unixy feel with intuitive customizations and sane defaults. Everything should just work out of the box.
+
+*aflit* is distributed for 64 Bit installs only. The official Arch ISO contains packages for both 32 Bit and 64 Bit variants which makes it heavier than required. *aflit* is just 700 MBs with all the extra packages and fonts bundled!
+
+## Screenshots
+
+![sample screeny](http://i.imgur.com/txKclzQ.png)
+
+## Getting Started
+
+You can grab the latest image at <https://www.dropbox.com/s/snkvvypn7v4c3us/archlinux-2016.05.05.iso?dl=0>.
+
+Please verify the integrity of the downloaded image with the following hashes:
+
+- **md5sum: `222dd87e614b17bfb368ff160dfd3cf2`	archlinux-2016.05.05.iso**
+- **sha1sum: `264085a5d76c4fdae0cbd3299686474c5fdd905f`	archlinux-2016.05.05.iso**
+
+Boot through the ISO via your favorite method, and use the following credentials to login in the live environment:
+
+- **username: newser**
+- **password: reswen**
+
+You'd be greeted by the `fish` shell. To connect to wifi, you may use the standard `wifi-menu` command. To launch X, just use `startx` and you'd be greeted with a cleanly customized i3 desktop.
+
+You can then use the standard i3 shortcut bindings with the `Modifier` key set to `Super`, documented at <http://i3wm.org/docs/userguide.html>.
+
+Quick shortcut list:
+
+- `Super+D` to select a program to launch
+- `Super+P` window switcher
+- `Super+F1` launch ranger
+- `Super+Enter` launch terminal
+- `Super+F2` launch vim
+- `Super+W` switched to tabbed layout
+- `Super+<n>` switch to nth workspace
+- `Super+Shift+<n>` shift active window to nth workspace
+
+### Roadmap
+
+- Documentation
+	- Feel free to start a wiki on this repo if you can read the customizations in the dotfiles :)
+- More screenshots
 
 ### License
 
@@ -21,4 +59,3 @@ WTFPL
 ### Author
 
 Awal Garg
-
