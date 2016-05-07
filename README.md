@@ -7,7 +7,7 @@
 - rofi (window switcher and application picker)
 - feh (viewing images)
 - scrot (screenshot taker)
-- ttf-inconsolata (monsospaced font)
+- ttf-inconsolata (monospaced font)
 
 It also features the regular packages one expects in a regular install like xorg, common video drivers, a browser (firefox), alsa, document reader (zathura) and other things all pre-setup to give a balance of the unixy feel with intuitive customizations and sane defaults. Everything should just work out of the box.
 
